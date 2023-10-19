@@ -1,0 +1,63 @@
+#main-page-section {
+    width: 99vw;
+    height: 99vh;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#new-task-entry {
+    width: 60%;
+}
+
+.button:hover {
+    background-color: rgb(167, 103, 226);
+    text-decoration: underline;
+}
+
+.fa-xmark {
+    color: rgb(252, 60, 60);
+    padding: .15rem;
+    margin: .1rem;
+    font-size: 1.5rem;
+}
+
+.fa-xmark:hover {
+    color: rgb(116, 37, 37);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.fa-check {
+    color: rgb(58, 218, 58);
+    padding: .15rem;
+    margin: .1rem;
+    font-size: 1.5rem;
+}
+
+.fa-check:hover {
+    color: rgb(4, 95, 4);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#submit-task-container {
+    box-shadow: 1rem;
+}
+
+#display-task-container p {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: .5rem;
+    padding: .25rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.75rem;
+}
+
+.hide {
+    display: none;
+}
