@@ -1,7 +1,9 @@
 const taskBtn = document.getElementById('task-btn');
+let completedBtn = document.getElementById('see-completed-btn');
 let taskEntry = document.getElementById('new-task-entry')
 let displayTask = document.getElementById('task-text');
 let displayTaskContainer = document.getElementById('display-task-container');
+let completedTaskContainer = document.getElementById('completed-task-container');
 
 taskBtn.addEventListener('click', function () {
     let userTaskEntry = taskEntry.value;
@@ -24,6 +26,12 @@ taskBtn.addEventListener('click', function () {
         newTaskParagraph.remove();
     });
 
+checkmarkSpan.addEventListener('click', function () {
+     let completedTaskParagraph = document.createElement('p');
+     completedTaskParagraph.appendChild(document.createTextNode(userTaskEntry)); 
+     completedTaskContainer.appendChild(completedTaskParagraph);
+     newTaskParagraph.remove();
+});
     // Append the <p> element to the container
     displayTask.appendChild(newTaskParagraph);
 
@@ -33,3 +41,7 @@ taskBtn.addEventListener('click', function () {
     // Remove the "hide" class from displayTask
     displayTaskContainer.classList.remove('hide');
 });
+
+completedBtn.addEventListener('click', function () {
+    completedTaskContainer.classList.remove('hide');
+  });
